@@ -1,0 +1,55 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "MyAnimeList Launcher",
+  "description": "Search entries from MyAnimeList.net",
+  "developer_name": "JulianCDC",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.5
+  },
+  "preferences": [
+    {
+      "id": "mal_kw",
+      "type": "keyword",
+      "name": "MyAnimeList",
+      "description": "Search anime or manga on MyAnimeList.net",
+      "default_value": "mal"
+    },
+    {
+      "id": "mal_kw_manga",
+      "type": "keyword",
+      "name": "Only manga",
+      "description": "Only search manga on MyAnimeList.net",
+      "default_value": "man"
+    },
+    {
+      "id": "mal_kw_anime",
+      "type": "keyword",
+      "name": "Only anime",
+      "description": "Only search anime on MyAnimeList.net",
+      "default_value": "ani"
+    },
+    {
+      "id": "api_key",
+      "type": "input",
+      "name": "API Key",
+      "description": "Your MyAnimeList API key"
+    },
+    {
+      "id": "search_anime",
+      "type": "select",
+      "name": "Search Anime",
+      "description": "Search for anime in global search",
+      "default_value": "true",
+      "options": [true, false]
+    },
+    {
+      "id": "search_manga",
+      "type": "select",
+      "name": "Search Manga",
+      "description": "Search for manga in global search",
+      "default_value": "true",
+      "options": [true, false]
+    }
+  ]
+}
